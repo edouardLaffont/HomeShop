@@ -5,9 +5,11 @@ import java.util.Map;
 public class Bill {
     private Customer customer;
     private Map<Product, Integer> products;
+    private Delivery delivery;
 
     public Bill(Customer customer) {
         this.customer = customer;
+        this.delivery = delivery;
     }
 
     /**
