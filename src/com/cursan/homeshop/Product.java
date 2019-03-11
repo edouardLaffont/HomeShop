@@ -30,7 +30,10 @@ public class Product {
 
     public String getName() {
         return name;
+    }
 
+    public String getDescription() {
+        return description;
     }
 
     public double getPrice() {
