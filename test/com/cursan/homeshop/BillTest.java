@@ -34,7 +34,7 @@ public class BillTest {
         bill.addProduct(cafe,1);
         bill.addProduct(tv, 1);
         bill.generate(writerMock);
-        int lineNumber = output.split("\n").length;
+        int lineNumber = output.split("%n").length;
         assertEquals(20, lineNumber);
     }
 
