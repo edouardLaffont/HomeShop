@@ -15,5 +15,6 @@ public class Main {
         bill.addProduct(fridge,1);
 
         bill.generate(new FileWriter("facture_leblanc"));
+
     }
 }
