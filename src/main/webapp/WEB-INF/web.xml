@@ -4,7 +4,7 @@
          version="3.1">
     <servlet>
         <servlet-name>HelloWorld</servlet-name>
-        <servlet-class>com.cursan.homeshop.web.HelloWorldServlet</servlet-class>
+        <servlet-class>com.cursan.homeshop.com.cursan.homeshop.web.HelloWorldServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
