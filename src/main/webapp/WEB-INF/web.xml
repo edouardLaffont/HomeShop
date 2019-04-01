@@ -4,21 +4,13 @@
          version="3.1">
 
     <servlet>
-        <servlet-name>HelloWorld</servlet-name>
-        <servlet-class>com.cursan.homeshop.com.cursan.homeshop.web.HelloWorldServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>BillServlet</servlet-name>
+        <servlet-name>Bill</servlet-name>
         <servlet-class>com.cursan.homeshop.com.cursan.homeshop.web.BillServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>HelloWorld</servlet-name>
-        <url-pattern>/test</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
         <servlet-name>Bill</servlet-name>
-        <url-pattern>bill</url-pattern>
+        <url-pattern>/bill</url-pattern>
     </servlet-mapping>
 
 </web-app>

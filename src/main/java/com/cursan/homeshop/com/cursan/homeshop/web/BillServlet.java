@@ -35,10 +35,9 @@ public class BillServlet extends HttpServlet {
             displayBill(req, resp);
     }
 
-    @Override
-    public void init() throws ServletException {
-        super.init();
+    private void displayBill(HttpServletRequest req, HttpServletResponse resp) {
     }
+
 
     private void displayFrom(HttpServletResponse resp) throws IOException {
         for (int i = 0; i < products.size(); i++) {
