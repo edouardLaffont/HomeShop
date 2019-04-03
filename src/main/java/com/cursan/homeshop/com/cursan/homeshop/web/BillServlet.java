@@ -37,7 +37,7 @@ public class BillServlet extends HttpServlet {
 
     private void displayBill(HttpServletRequest req, HttpServletResponse resp) {
         Map<String,String> params = splitParameters(req.getQueryString());
-        Customer customer = new Customer(params.get("fullname"), params.get("adresse"));
+        Customer customer = new Customer(params.get("fullname"), params.get("address"));
         Delivery delivery = null;
         switch (params.get("deliveryMode")) {
             case "direct" :
@@ -54,7 +54,7 @@ public class BillServlet extends HttpServlet {
                 break;
         }
         Bill bill = new Bill(customer, delivery);
-        String[] productsParams = params.get("product").split("%0D%0A");
+        String[] productsParams = params.get("products").split("%0D%0A");
         for (String productLine : productsParams) {
             String[] productAndQuantity = productLine.split("%3A");
             Product product = products.get(Integer.parseInt(productAndQuantity[0]));
